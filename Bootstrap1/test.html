@@ -29,8 +29,11 @@
       href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
       rel="stylesheet"
     />
-    <title>Bootstrap</title>
+    <title>Foundation Tutorials</title>
     <style>
+      html{
+    scroll-behavior: smooth;
+}
       html,body{
         height:100%;
       }
@@ -205,7 +208,7 @@ body {
   <body>
     <div class="container-fluid">
       <div class="row" id="headtag">
-        <div class="col"><h1>Foundation Tutorials</h1></div>
+        <div class="col"><h1 autofocus>Foundation Tutorials</h1></div>
       </div>
       <div class="row" id="mynav">
         <div class="col">
@@ -225,7 +228,7 @@ body {
             <div class="collapse navbar-collapse" id="mynavbar">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item p-2">
-                  <a href="" class="nav-link">Home</a>
+                  <a href="#mycontent" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item dropdown p-2">
                   <a
@@ -244,10 +247,10 @@ body {
                   </div>
                 </li>
                 <li class="nav-item p-2">
-                  <a href="" class="nav-link">About Us</a>
+                  <a href="#founder" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item p-2">
-                  <a href="" class="nav-link">Contact Us</a>
+                  <a href="#contactus" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown p-2">
                   <a
@@ -257,10 +260,10 @@ body {
                     >Login/Sign Up</a
                   >
                   <div class="dropdown-menu" id="subli">
-                    <a href="" class="dropdown-item text-light bg-dark mb-1"
+                    <a href="#contactus" class="dropdown-item text-light bg-dark mb-1"
                       >Login</a
                     >
-                    <a href="" class="dropdown-item text-light bg-dark mt-1"
+                    <a href="#contactus" class="dropdown-item text-light bg-dark mt-1"
                       >Sign Up</a
                     >
                   </div>
@@ -273,7 +276,7 @@ body {
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button class="btn btn-outline-info m-2" type="submit">
+                <button class="btn btn-outline-info m-2" type="submit" autofocus>
                   Search
                 </button>
               </form>
@@ -314,7 +317,7 @@ body {
 
 <!-- Page Content -->
 <div class="container">
-  <div class="row">
+  <div class="row" id="founder">
     <!-- Team Member 1 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
@@ -364,11 +367,11 @@ body {
           <div class="card-img-left d-none d-md-flex">
              <!-- Background image for card set in CSS! -->
           </div>
-          <div class="card-body">
+          <div class="card-body" id="contactus">
             <h5 class="card-title text-center">Limted seats for IIT/NEET Hurry up Register NOW !</h5>
             <form class="form-signin">
               <div class="form-label-group">
-                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required>
                 <label for="inputUserame">Username</label>
               </div>
 
@@ -410,5 +413,4 @@ body {
       
     </div>
   </body>
-
 </html>
